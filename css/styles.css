@@ -1,0 +1,36 @@
+body {
+    background-color: #546A7B;
+}
+
+.strip {
+    background-color: rgba(128, 0, 128,0.2);
+    background-color: #EAF6F6;
+    display: block;
+    width: 460px;
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+
+
+hr {
+    border-color: grey;
+    border-style: dotted none none none;
+    border-width: 5px;
+    border-spacing: 5px;
+    width: 90%;
+    
+}
+
+h1, h3 {
+    color: #66BFBF;
+}
+
+h3 {
+    text-align: center;
+}
+h3 > a {
+    text-decoration: none;
+    
+}
