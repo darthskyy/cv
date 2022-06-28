@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+<body>
+    <h2>Practising using Forms</h2>
+    <p>Generally forms are made of label and input elements and each label would serve one input (for this to occur the <em>for</em> attribute of the label and the <em>id</em> attribute of the input must match). For some inputs you can specify <em>required</em> to make sure it's filled in before it's submitted.</p>
+
+    <h3>Text input</h3>
+    <p>These are regular inputs which can take in any text data. You can limit the length of the text passed into the input using <em>minlength</em> and <em>maxlength</em> attributes. The type of the input is <strong>"text"</strong>. You can also specify the <em>placeholder</em> and <em>value</em> attributes to put placeholders so that users know what to type in the input or default values</p>
+    <fieldset>
+        <legend>Example: text</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td><input type="text" name="name" required placeholder="your name goes here"></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username: </label></td>
+                    <td><input type="text" name="username" id="" minlength="6" maxlength="15" value="this is a default"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit Info">
+        </form>
+    </fieldset>
+
+    <h3>Email input</h3>
+    <p>This inherits all the syntax of a text input but with one added property that only allows for emails to be submitted. So if the input does not have an "@" it is not allow.</p>
+    <fieldset>
+        <legend>Example: email</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="uname">Username:</label></td>
+                    <td><input type="text" name="uname" required placeholder="user_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" name="email" id="" placeholder="name@organisation.com"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit Info">
+        </form>
+    </fieldset>
+
+    <h3>Password input</h3>
+    <p>Password is just a special type of input that masks the input.</p>
+    <fieldset>
+        <legend>Example: password</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="uname">Username:</label></td>
+                    <td><input type="text" name="uname" id="uname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit Info">
+        </form>
+    </fieldset>
+
+    <h3>Checkbox input</h3>
+    <p>This is for when users can select multiple values from a set of predefined values. You can give the attribute <strong>checked</strong> to checkboxes so that they are automatically selected from the beginning. </p>
+    <fieldset>
+        <legend>Example: checkbox</legend>
+        <label for="">Enter your preferred languages:</label>
+        <br>
+        <input type="checkbox" name="markup" id="markup">
+        <label for="markup">HTML</label>
+        <br>
+        <input type="checkbox" name="css" id="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" name="python" id="python">
+        <label for="python">Python</label>
+        <br>
+        <input type="checkbox" name="java" id="java">
+        <label for="java">Java</label>
+    </fieldset>
+
+    <h3>Radio input</h3>
+    <p>These are similar to checkboxes on that you can only select one input for a set of radio inputs. to make sure that you can only select one input, you have to make sure that the <strong>name</strong> attribute for all the radios is set to the same value; this gives the mutual exclusivity. <strong>checked</strong> also applies here but for only one attribute in the set </p>
+    <fieldset>
+        <legend>Example: radio</legend>
+        <label>Enter your </label>
+        <br>
+        <input type="radio" name="ethnicity" id="black" checked>
+        <label for="black">Black (has checked attribute)</label>
+        <br>
+        <input type="radio" name="ethnicity" id="white">
+        <label for="white">White</label>
+        <br>
+        <input type="radio" name="ethnicity" id="brown">
+        <label for="brown">Brown</label>
+        <br>
+        <input type="radio" name="ethnicity" id="other">
+        <label for="different">Other</label>
+        <br>
+        <input type="radio" name="different" id="different" checked>
+        <label for="other">This radio has a different name than the others</label>
+    </fieldset>
+
+    <h3>Date Input</h3>
+    <p></p>
+    <h3>Number input</h3>
+    <p></p>
+    
+    <h3>Text input</h3>
+    <p></p>
+    
+
+    <br><br><br><br>
+    <a href="../index.html">Back to home</a>
+</body>
+</html>
